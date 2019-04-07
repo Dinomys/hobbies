@@ -17,5 +17,7 @@
 <d:forEach var="hobby" items="${paramValues.hobby}">
     ${hobby}
 </d:forEach>
+
+"${fn:join(hobby, "/")}"
 </body>
 </html>
