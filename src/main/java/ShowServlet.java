@@ -13,14 +13,11 @@ public class ShowServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String[] hobbies = req.getParameterValues("hobby");
-        String lastName = req.getParameter("lastName");
+
+        if (req.getParameterValues("hobby") == null || hobbies.length == 0)
+            req.getRequestDispatcher("showError.jsp").forward(req, resp);
 
         HttpSession session = req.getSession();
-
-
-        if (hobbies.length == 0) {
-            req.getRequestDispatcher("showError.jsp").forward(req, resp);
-        }
 
         req.getRequestDispatcher("show.jsp").forward(req, resp);
     }
