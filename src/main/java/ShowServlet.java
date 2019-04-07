@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet("/show")
+@WebServlet("/show1")
 public class ShowServlet extends HttpServlet {
 
     @Override
