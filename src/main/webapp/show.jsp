@@ -1,3 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%--
   Created by IntelliJ IDEA.
   User: hanna
@@ -11,6 +14,8 @@
     <title>Show hobbies</title>
 </head>
 <body>
-
+<c:forEach var="hobby" items="${paramValues.hobby}">
+    ${hobby}
+</c:forEach>
 </body>
 </html>
