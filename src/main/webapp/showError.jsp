@@ -8,11 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Show error</title>
 </head>
 <body>
 <div>
 <%="Error"%>
-</label></div>
+</div>
+<a href="index.jsp" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
 </body>
 </html>
