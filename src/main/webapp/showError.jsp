@@ -14,6 +14,6 @@
 <div>
 <%="Error"%>
 </div>
-<a href="index.jsp" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="index.jsp" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back to Index</a>
 </body>
 </html>
